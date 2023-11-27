@@ -1,0 +1,123 @@
+:root {
+    --purple: #4b367c;
+    --after-click: #bb34f1;
+    --grey: #ffffffd8;
+    --main-font: 'Arial Narrow'
+}
+  
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+  
+body {
+  font-family: var(--main-font);
+}
+  
+
+header div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 20px 20px;
+    padding: 5px;
+    align-content: center;    
+}
+  
+.view-scores {
+    font-size: 20px;
+    border: none;
+    background-color: transparent;
+    padding: 20px; 
+    font-family: var(--main-font);
+    text-decoration: underline;
+}
+  
+.instructions {
+    font-size: .60cm;
+    padding: 0px 50px ;
+    text-align: center;
+}
+  
+.initials {
+    font-size: 20px;
+    font: 2px;
+    padding-block: 10px;   
+}
+ 
+.section-style{
+    display: grid; 
+    grid-template-rows: 1fr, 2fr;
+    grid-auto-rows: (10px, auto);
+    flex: wrap;
+    justify-content: left;
+    align-content:space-between;
+}
+ 
+.questions-ul {
+    list-style-type: none;
+    display: contents;
+}
+
+.questions-ul li {
+  width: 250px;
+}
+
+.list-inner {
+    display: grid;
+    grid-template-rows: 1fr, 2fr, 1fr;
+    grid-auto-rows: (10px, auto);
+    grid-gap: .05em; 
+    justify-items: center; 
+}
+
+ 
+.btn-style {
+    background-color: var(--purple);
+    color: var(--grey);
+    border-radius: 10px;
+    width: 225px;
+    border: 1px solid black;
+    font-size: .50cm;
+    padding: 8px;
+    margin: 4px;
+    outline: none;
+  }
+  
+.btn-style-main:active,
+.answer-btn:active   {
+    background-color: var(--after-click);
+    transform: translateY(1px);
+  }
+
+.answer-btn {
+    color: white;
+    width: 225px;
+    border: 1px solid black;
+    font-size: 20px;
+    padding: 8px;
+    outline: none;
+    text-align: start;
+    border: 1px solid;
+    margin: 5px;
+    border-radius: 10px;
+    background-color: var(--purple)
+}
+  
+.center {
+   display: flex;
+   justify-content: center;
+   padding: 10px;
+}
+  
+  
+
+  
+#questions,
+#final-score,
+#high-scores,
+#correct-wrong {
+    display: none;
+}
+  

@@ -1,38 +1,97 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Code Quiz</title>
+    <title>Code Quiz </title>
+    <link rel="stylesheet" href='./assets/style.css'>
 </head>
 <body>
-    <header>
-        <section id="timer-container">
-            <p> Time: <span id="timer">60</span> sec</p>
-        </section>
+    <!-- header-->
+    <header class="header-title" id="header">
+        <div>
+            <div class="score-time">
+                <button class="view-scores" type="button"> View High Scores</button>
+            </div>
+            <div class="score-time">
+                <p class="timer">Time: 75s</p>
+            </div>
+        </div>
     </header>
-   <section id="question-container">
-    <h3 id="question"></h3>
-   </section>
-   <section id="choices-container">
-        <label>
-            <input type="button" name="choice" value="A.">
-        </label>
-        <label>
-            <input type="button" name="choice" value="B.">
-        </label>
-        <label>
-            <input type="button" name="choice" value="C.">
-        </label>
-        <label>
-            <input type="button" name="choice" value="D.">
-        </label>
-   </section>
+    
 
-<button id="check-answer">Check Answer</button>
-<button id="next-question">Next Question</button>
+    <main>
+         <!-- title/instructions section -->
+        <section class="quiz-start">
+            <div class="main-title center">
+                <h1 class="switch" id="switch-out">Coding Quiz Challenge</h1>                
+            </div>
+            <div class="main-display center" id="question-answer">
+                <p class="instructions" id="question-li">
+                    Answer the follwing code-related questions with-in the time
+                    limit. Incorrect answers will penalize your score-time by 10 seconds. Final score equals to time remaining. 
+                </p>
+            </div>
 
-<script src="./assets/script.js">
-</script>
+            <!-- start quiz button -->
+            <div class="results center" id="row-bottow">
+                <button id="start" class="btn-style">Start Quiz</button>
+            </div>
+        </section>
+
+
+        <!-- hidden -->
+        <!-- question section -->
+        <section class="all-question" id="questions">
+            <div class="questions-list center">
+                <div class="list-inner">
+                    <ul class="questions-ul">
+                        <h2 id="question">Questions</h2>
+                        <li><button id="answer1" value="0" type="button" class="answer-btn">Answer 1</button></li>
+                        <li><button id="answer2" value="1" type="button" class="answer-btn ">Answer 2</button></li>
+                        <li><button id="answer3" value="2" type="button" class="answer-btn">Answer 3</button></li>
+                        <li><button id="answer4" value="3" type="button" class="answer-btn">Answer 4</button></li>
+                    </ul>
+
+                    <div id="results">
+                        <hr> <!-- results display -->
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- score section -->
+        <section class="wrapper1" id="final-score">
+            <div class="center">
+                <div class="style-2">
+                    <h2>Great Job!</h2>
+                    <p>Your Final Score: <span id="score">0</span></p>
+                     <p class="initials-section">Enter initials:
+                        <span class="initials-form"><input placeholder="initials" id="initials" ></span>
+                    <button id="submit-score" class="btn-style">Submit</button>
+                    <hr>
+                        </p>
+                </div>
+            </div>
+                
+        </section>
+
+        <!--high scores-->
+        <section id="high-scores">
+            <div class="center">
+                <div class="style-3">
+                    <p><h2>High Scores</h2></p>
+                    <ol class="score-list"></ol>
+                    <button id="back" class="btn-style">Back</button>
+                    <button id="clear-scores" class="btn-style">Clear All Scores</button>
+                </div>
+             
+            </div>
+        </section>
+    </main>
+    <script src="./assets/script.js"></script>
+
 </body>
+
 </html>
