@@ -1,4 +1,4 @@
-# Code-Quiz
+# Code Quiz
 Module 4 Challenge
 
 ## Description
@@ -6,7 +6,8 @@ This site was created for coding boot camp student to be able to take a timed qu
 
 
 ## Usage
-To open the site click on the following link.
+To open the site click on the following link.\
+https://angiem07.github.io/Code-Quiz/
 
 Below is a preview of the site.
 
