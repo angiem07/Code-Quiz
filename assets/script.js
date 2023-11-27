@@ -14,7 +14,7 @@ const highscoresEl = document.querySelector("#high-scores");
 let scoreListEl = document.querySelector(".score-list");
 let scoreList = [];
 const ansBtn = document.querySelectorAll(".answer-btn");
-let submitScrBtn = document.querySelector("#submit-score");
+let submitScoreBtn = document.querySelector("#submit-score");
 let clearScrBtn = document.querySelector("#clear-scores");
 let viewScrBtn = document.querySelector(".view-scores");
 let hideScoresBtn = document.querySelector("#back");
@@ -147,8 +147,6 @@ function displayScores() {
             li.textContent = `${scoreList[i].initials}: ${scoreList[i].score}`;
             scoreListEl.append(li);
         }
-
-        
     }
 }
 
@@ -162,7 +160,7 @@ window.onload = function() {
 
     start.addEventListener("click", startQuiz);
 
-    submitScrBtn.addEventListener("click", addScore);
+    submitScoreBtn.addEventListener("click", addScore);
 
     hideScoresBtn.addEventListener("click", function () {
         highscoresEl.style.display = "none";
