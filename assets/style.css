@@ -64,11 +64,11 @@ header div {
   width: 250px;
 }
 
-.list-inner {
+.list {
     display: grid;
     grid-template-rows: 1fr, 2fr, 1fr;
     grid-auto-rows: (10px, auto);
-    grid-gap: .05em; 
+    grid-gap: 5px; 
     justify-items: center; 
 }
 
@@ -110,9 +110,6 @@ header div {
    justify-content: center;
    padding: 10px;
 }
-  
-  
-
   
 #questions,
 #final-score,
